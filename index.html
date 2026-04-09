@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yummytingg_kitchen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="#" class="nav-logo">yummytingg_kitchen</a>
+    <ul class="nav-links">
+      <li><a href="#offerings">Bakes</a></li>
+      <li><a href="#story">My Story</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-left">
+      <p class="hero-eyebrow">yummytingg_kitchen · Singapore</p>
+      <h1 class="hero-title">
+        Baked with<br>
+        <em>quiet</em><br>
+        intention
+      </h1>
+      <p class="hero-desc">
+        Small-batch bakes made from thoughtfully chosen ingredients.
+        Each piece made to be felt, not just eaten.
+      </p>
+      <a href="#order" class="hero-cta">
+        See how to order <span class="hero-cta-arrow">→</span>
+      </a>
+    </div>
+    <div class="hero-right">
+      <img src="images/hero.jpg" alt="Fresh baked banana chocolate bread" class="hero-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="hero-img-placeholder" style="display:none; position:absolute; inset:0;">
+        [ add hero.jpg to images folder ]
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <div class="marquee-item"><span>Chocolate Banana Bread</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Brown Butter Dark Choc Chip Cookies</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Earl Grey Scones</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Earl Grey + Pistachio Cookie</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Milk Buns</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Earl Grey Chiffon Cake</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Small Batch · Handcrafted</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Released in Drops</span><span class="marquee-dot"></span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><span>Chocolate Banana Bread</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Brown Butter Dark Choc Chip Cookies</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Earl Grey Scones</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Earl Grey + Pistachio Cookie</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Milk Buns</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Earl Grey Chiffon Cake</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Small Batch · Handcrafted</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Released in Drops</span><span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ── What I Bake ── -->
+  <section id="offerings">
+    <div class="fade-up" style="margin-bottom: 56px;">
+      <p class="section-label">What I bake</p>
+      <h2 class="section-title">Past <em>releases</em></h2>
+    </div>
+
+    <div class="products-strip fade-up">
+
+      <div class="product-card">
+        <img src="images/banana-bread.jpg" alt="Chocolate Banana Bread"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="product-card-placeholder" style="display:none; background:linear-gradient(145deg,#1a1208,#2a1a08); color:rgba(184,137,90,0.15); position:absolute; inset:0;">[ banana-bread.jpg ]</div>
+        <div class="product-info">
+          <p class="product-name">Chocolate Banana Bread</p>
+          <p class="product-detail">Mini Loaf · 78% Dark Chocolate</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/brown-butter-cookies.jpg" alt="Brown Butter Dark Choc Chip Cookies"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="product-card-placeholder" style="display:none; background:linear-gradient(145deg,#100e06,#1c1a0a); color:rgba(184,137,90,0.15); position:absolute; inset:0;">[ cookies.jpg ]</div>
+        <div class="product-info">
+          <p class="product-name">Brown Butter Cookies</p>
+          <p class="product-detail">78% Dark Chocolate · Sea Salt</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/earl-grey-scones.jpg" alt="Earl Grey Scones"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="product-card-placeholder" style="display:none; background:linear-gradient(145deg,#0e1008,#181c0a); color:rgba(184,137,90,0.15); position:absolute; inset:0;">[ earl-grey-scones.jpg ]</div>
+        <div class="product-info">
+          <p class="product-name">Earl Grey Scones</p>
+          <p class="product-detail">Flaky · Fragrant</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/earlgreycookies.jpg" alt="Earl Grey + Pistachio Cookies"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="product-card-placeholder" style="display:none; background:linear-gradient(145deg,#120e08,#1e1808); color:rgba(184,137,90,0.15); position:absolute; inset:0;">[ earlgreycookies.jpg ]</div>
+        <div class="product-info">
+          <p class="product-name">Earl Grey + Pistachio Cookies</p>
+          <p class="product-detail">Gooey · Nutty</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/milkbuns2.jpg" alt="Milk Buns"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="product-card-placeholder" style="display:none; background:linear-gradient(145deg,#0c0e10,#141618); color:rgba(184,137,90,0.15); position:absolute; inset:0;">[ milkbuns2.jpg ]</div>
+        <div class="product-info">
+          <p class="product-name">Milk Buns</p>
+          <p class="product-detail">Pillowy Soft · Buttery</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/brownies.jpg" alt="Brownies"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="product-card-placeholder" style="display:none; background:linear-gradient(145deg,#0e1008,#14180a); color:rgba(184,137,90,0.15); position:absolute; inset:0;">[ brownies.jpg ]</div>
+        <div class="product-info">
+          <p class="product-name">Dark Chocolate Brownies</p>
+          <p class="product-detail">Fudgy · Rich</p>
+        </div>
+      </div>
+
+    </div>
+    <p style="text-align:center; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color: var(--cream-muted); margin-top: 32px;">
+      Not everything is available at once — follow me on Instagram for drop announcements.
+    </p>
+  </section>
+
+  <!-- ── Gallery ── -->
+  <section id="gallery" class="grid-section">
+    <div class="grid-header fade-up">
+      <div>
+        <p class="section-label">Gallery</p>
+        <h2 class="section-title">From the <em>kitchen</em></h2>
+      </div>
+      <a href="#order" class="grid-view-all">Order Now</a>
+    </div>
+
+    <div class="masonry-grid">
+
+      <div class="grid-item">
+        <img src="images/banana-bread.jpg" alt="Chocolate Banana Bread" style="aspect-ratio:3/4; object-fit:cover;"
+             onerror="this.outerHTML='<div style=\'aspect-ratio:3/4;background:#1c1409;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(184,137,90,.2);\'>[photo]</div>'">
+        <div class="grid-item-overlay">
+          <div>
+            <p class="grid-item-label">Banana Chocolate</p>
+            <p class="grid-item-sub">Mini Loaf</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/brown-butter-cookies.jpg" alt="Brown Butter Cookies" style="aspect-ratio:1/1; object-fit:cover;"
+             onerror="this.outerHTML='<div style=\'aspect-ratio:1/1;background:#100e08;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(184,137,90,.2);\'>[photo]</div>'">
+        <div class="grid-item-overlay">
+          <div>
+            <p class="grid-item-label">Brown Butter Cookies</p>
+            <p class="grid-item-sub">78% Dark Chocolate</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/earl-grey-scones.jpg" alt="Earl Grey Scones" style="aspect-ratio:4/5; object-fit:cover;"
+             onerror="this.outerHTML='<div style=\'aspect-ratio:4/5;background:#1a1308;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(184,137,90,.2);\'>[photo]</div>'">
+        <div class="grid-item-overlay">
+          <div>
+            <p class="grid-item-label">Earl Grey Scones</p>
+            <p class="grid-item-sub">Flaky · Fragrant</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/earlgreycookies.jpg" alt="Earl Grey Pistachio Cookies" style="aspect-ratio:3/4; object-fit:cover;"
+             onerror="this.outerHTML='<div style=\'aspect-ratio:3/4;background:#141008;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(184,137,90,.2);\'>[photo]</div>'">
+        <div class="grid-item-overlay">
+          <div>
+            <p class="grid-item-label">Earl Grey + Pistachio</p>
+            <p class="grid-item-sub">Cookies</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/milkbuns2.jpg" alt="Milk Buns" style="aspect-ratio:1/1; object-fit:cover;"
+             onerror="this.outerHTML='<div style=\'aspect-ratio:1/1;background:#0f0e08;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(184,137,90,.2);\'>[photo]</div>'">
+        <div class="grid-item-overlay">
+          <div>
+            <p class="grid-item-label">Milk Buns</p>
+            <p class="grid-item-sub">Pillowy Soft</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/brownies.jpg" alt="Dark Chocolate Brownies" style="aspect-ratio:3/4; object-fit:cover;"
+             onerror="this.outerHTML='<div style=\'aspect-ratio:3/4;background:#1c1610;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(184,137,90,.2);\'>[photo]</div>'">
+        <div class="grid-item-overlay">
+          <div>
+            <p class="grid-item-label">Dark Chocolate Brownies</p>
+            <p class="grid-item-sub">Fudgy · Rich</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── My Story ── -->
+  <section id="story">
+    <div class="about-section">
+      <div class="about-img-wrap fade-up">
+        <img src="images/about.jpg" alt="yummytingg_kitchen" class="about-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="about-img-placeholder" style="display:none;">[ about.jpg ]</div>
+        <div class="about-accent">
+          <div>
+            <span class="about-accent-num">100%</span>
+            <p class="about-accent-text">Made<br>to Order</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <p class="section-label">My Story</p>
+        <h2 class="section-title">Made with <em>love</em>,<br>from home</h2>
+        <p class="about-body">
+          yummytingg_kitchen started as a quiet weekend ritual —
+          <span>ripe bananas, dark chocolate, the smell of something good in the oven.</span>
+          What began as baking for family turned into something I couldn't stop:
+          a small home bakery built on care, honesty, and the belief that
+          <span>a good bake can make someone's day a little softer.</span>
+        </p>
+        <p class="about-body">
+          Everything I make is baked fresh, in small batches, and sent with a handwritten note.
+          <span>No preservatives. No shortcuts. Just real ingredients and time.</span>
+        </p>
+        <p class="signature">yummytingg_kitchen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Order ── -->
+  <section id="order" class="cta-section">
+    <div class="cta-bg"></div>
+    <p class="section-label">How it works</p>
+    <h2 class="section-title">Let me bake<br><em>something</em> for you</h2>
+    <p class="about-body">
+      I release bakes in small drops. Follow me on Instagram so you never miss one.
+    </p>
+
+    <div class="order-step">
+      <span class="order-step-num">01</span>
+      <div>
+        <p class="order-step-title">Follow on Instagram</p>
+        <p class="order-step-desc">I announce every drop on <span>@yummytingg_kitchen</span> — turn on notifications so you're first to know.</p>
+      </div>
+    </div>
+
+    <div class="order-step">
+      <span class="order-step-num">02</span>
+      <div>
+        <p class="order-step-title">Fill in the order form</p>
+        <p class="order-step-desc">Each drop links to a Google Form. Fill it in quickly — slots are limited and close once full.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+      <a href="https://instagram.com/yummytingg_kitchen" class="cta-btn" target="_blank">Follow @yummytingg_kitchen</a>
+
+      <!-- ============================================================
+        GOOGLE FORM BUTTON — HOW TO USE:
+
+        STEP 1: Delete the two lines that say "REMOVE THIS LINE" below
+        STEP 2: Replace YOUR_FORM_LINK with your Google Form URL
+                e.g. https://docs.google.com/forms/d/e/abc123.../viewform
+        STEP 3: When the drop closes, add the lines back to hide the button
+
+        REMOVE THIS LINE
+        <a href="https://docs.google.com/forms/d/e/YOUR_FORM_LINK/viewform"
+           class="cta-btn"
+           target="_blank">
+          Order Now — Drop Open
+        </a>
+        REMOVE THIS LINE
+      ============================================================= -->
+
+    </div>
+
+    <!-- ============================================================
+      ORDER NOTE TEXT
+      Update this message to reflect the current drop status.
+      When CLOSED: leave as is, or write "Next drop coming soon!"
+      When OPEN:   change to something like "Drop closes Sunday 11:59pm!"
+    ============================================================= -->
+    <p class="order-note">Order form link will appear here when a drop is live</p>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-logo">yummytingg_kitchen</div>
+    <p class="footer-copy">© 2026 · yummytingg_kitchen · Singapore</p>
+    <ul class="footer-social">
+      <li><a href="https://instagram.com/yummytingg_kitchen" target="_blank">Instagram</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
