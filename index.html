@@ -21,7 +21,22 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#order">Order</a></li>
     </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- ── Side Drawer ── -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+    <ul class="drawer-links">
+      <li><a href="#offerings">Bakes</a></li>
+      <li><a href="#story">My Story</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </div>
 
   <!-- ── Hero ── -->
   <section class="hero" style="padding:0;">
@@ -278,19 +293,11 @@
       </div>
     </div>
 
-    <div class="order-step">
-      <span class="order-step-num">02</span>
-      <div>
-        <p class="order-step-title">Fill in the order form</p>
-        <p class="order-step-desc">Each drop links to a Google Form. Fill it in quickly — slots are limited and close once full.</p>
-      </div>
-    </div>
-
     <div style="margin-top: 40px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
       <a href="https://instagram.com/yummytingg_kitchen" class="cta-btn" target="_blank">Follow @yummytingg_kitchen</a>
 
       <!-- ============================================================
-        GOOGLE FORM BUTTON — HOW TO USE:
+        GOOGLE FORM BUTTON — HOW TO USE WHEN A DROP IS LIVE:
 
         STEP 1: Delete the two lines that say "REMOVE THIS LINE" below
         STEP 2: Replace YOUR_FORM_LINK with your Google Form URL
@@ -309,12 +316,10 @@
     </div>
 
     <!-- ============================================================
-      ORDER NOTE TEXT
-      Update this message to reflect the current drop status.
-      When CLOSED: leave as is, or write "Next drop coming soon!"
-      When OPEN:   change to something like "Drop closes Sunday 11:59pm!"
+      STATUS NOTE — update when a drop opens or closes
+      e.g. "Drop closes Sunday 11:59pm!" or "Next drop coming soon!"
     ============================================================= -->
-    <p class="order-note">Order form link will appear here when a drop is live</p>
+    <p class="order-note">Next drop coming soon — stay tuned on Instagram</p>
   </section>
 
   <!-- ── Footer ── -->
